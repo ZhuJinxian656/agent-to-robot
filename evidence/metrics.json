@@ -1,0 +1,188 @@
+{
+  "snapshot_utc": "2026-11-01T14:37:47.245269+00:00",
+  "direct_eef": {
+    "valid_smoke_cases": 15,
+    "successes": 2,
+    "official2100": false,
+    "model_weights_attested": false
+  },
+  "qwen_baseline": {
+    "completed": 227,
+    "successes": 0,
+    "conditions": {
+      "legacy": {
+        "episodes": 104,
+        "successes": 0,
+        "reasons": {
+          "zero_progress": 23,
+          "native": 6,
+          "decision_budget": 67,
+          "policy_stop": 2,
+          "wall_budget": 6
+        },
+        "signals": {
+          "commands_with_execution_feedback": 67013,
+          "native_execution_failed_commands": 22272,
+          "reply_parse_error_decisions": 129,
+          "output_token_limit_decisions": 87
+        },
+        "episodes_with_signal": {
+          "commands_with_execution_feedback": 104,
+          "native_execution_failed_commands": 103,
+          "reply_parse_error_decisions": 66,
+          "output_token_limit_decisions": 53
+        },
+        "unreadable": [],
+        "integrity_issues": 0,
+        "commands": {
+          "point": 18401,
+          "move": 29900,
+          "gripper": 4554,
+          "rotate": 9914,
+          "wait": 2132,
+          "home": 2112
+        },
+        "failure_kinds": {
+          "move": 12561,
+          "point": 5947,
+          "rotate": 3676,
+          "home": 88
+        },
+        "median_decisions": 240.0
+      },
+      "revised": {
+        "episodes": 123,
+        "successes": 0,
+        "reasons": {
+          "decision_budget": 76,
+          "zero_progress": 34,
+          "native": 8,
+          "policy_stop": 2,
+          "wall_budget": 3
+        },
+        "signals": {
+          "commands_with_execution_feedback": 76303,
+          "native_execution_failed_commands": 25049,
+          "reply_parse_error_decisions": 113,
+          "output_token_limit_decisions": 113
+        },
+        "episodes_with_signal": {
+          "commands_with_execution_feedback": 123,
+          "native_execution_failed_commands": 121,
+          "reply_parse_error_decisions": 66,
+          "output_token_limit_decisions": 66
+        },
+        "unreadable": [],
+        "integrity_issues": 0,
+        "commands": {
+          "point": 20807,
+          "move": 33272,
+          "rotate": 11391,
+          "gripper": 5298,
+          "wait": 3025,
+          "home": 2510
+        },
+        "failure_kinds": {
+          "move": 14399,
+          "point": 6501,
+          "rotate": 4100,
+          "home": 49
+        },
+        "median_decisions": 240
+      }
+    },
+    "note": "10 previously running episodes were interrupted by user request and are not counted as failures. Stopsignal configs, model sizes and task suites must not be mixed."
+  },
+  "show_harness": {
+    "episodes": 1200,
+    "successes": 16,
+    "scope": "Fixed-layout simulation,120 tasks; released simulation LoRA; not real-robot paper score"
+  },
+  "training_data": {
+    "unique_candidate_states": 894,
+    "independent_episodes": 12,
+    "by_arm": {
+      "right": 636,
+      "left": 258
+    },
+    "by_phase": {
+      "approach": 281,
+      "align": 209,
+      "descend": 209,
+      "grasp": 12,
+      "verify_grasp": 27,
+      "lift": 123,
+      "recover": 11,
+      "verify_goal": 22
+    },
+    "by_operation": {
+      "point": 13,
+      "rotate": 11,
+      "move": 857,
+      "gripper": 13
+    },
+    "note": "Counts describe correlated decision states, not independent trials. Paired output formats are counted once. Rare grasp/recovery decisions and independent layouts remain coverage limits; no training success is implied."
+  },
+  "libero": {
+    "n": 400,
+    "host_successes": 300,
+    "host_rate": 0.75,
+    "host_rate_wilson_95": [
+      0.7053228670693259,
+      0.7899209857635259
+    ],
+    "task_cluster_bootstrap_95": {
+      "host": [
+        0.635,
+        0.8525
+      ],
+      "strict": [
+        0.4725,
+        0.6925
+      ],
+      "resamples": 10000,
+      "seed": 0,
+      "cluster_unit": "task"
+    },
+    "strict_successes": 234,
+    "host_failures": 100,
+    "false_finish": 9,
+    "missed_finish": 66,
+    "terminations": {
+      "agent_finished": 243,
+      "agent_stopped_without_finish": 1,
+      "request_cap_exhausted": 156
+    }
+  },
+  "simpler": {
+    "completed": 1400,
+    "host_successes": 292,
+    "strict_successes": 228,
+    "per_setting": {
+      "bridge_vm": {
+        "episodes": 40,
+        "host_successes": 35,
+        "host_success_rate": 0.875,
+        "strict_successes": 28,
+        "strict_success_rate": 0.7
+      },
+      "google_va": {
+        "episodes": 920,
+        "host_successes": 190,
+        "host_success_rate": 0.20652173913043478,
+        "strict_successes": 149,
+        "strict_success_rate": 0.16195652173913044
+      },
+      "google_vm": {
+        "episodes": 440,
+        "host_successes": 67,
+        "host_success_rate": 0.15227272727272728,
+        "strict_successes": 51,
+        "strict_success_rate": 0.1159090909090909
+      }
+    },
+    "capability_calls": 161716,
+    "failed_capability_calls": 26327
+  },
+  "interpretation": "Different models, interfaces and task populations. These are exploration records, not a controlled method leaderboard."
+}

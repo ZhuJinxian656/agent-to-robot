@@ -1,0 +1,84 @@
+{
+  "source": "Agent-to-Robot-code-and-notes.zip",
+  "source_archive_truncated": true,
+  "recovered_entries_crc_checked": 1477,
+  "files": [
+    {
+      "file": "data/contract.py",
+      "archive_entry": "code/qwen-control-v2-20261028/scripts/contract.py",
+      "original_sha256": "8f61b8866c56d603c7c53e1e21b1f62bcadeddca1c93258f07970a625483fbc1",
+      "published_sha256": "cc218b3d89188d1b9662f78cd76fa29bfb46bd8a0e5793d840fec697dda56fc8",
+      "modified_for_publication": false
+    },
+    {
+      "file": "data/export_episode.py",
+      "archive_entry": "code/qwen-control-v2-20261028/scripts/export_episode.py",
+      "original_sha256": "a38302c3560ebcab5638bab5fcc5ce15a728d8004a49911d2a181c8457d80b8f",
+      "published_sha256": "ca510feeeea7cf6871c987c51528b653649bc9083baf53b3813b79682d158712",
+      "modified_for_publication": false
+    },
+    {
+      "file": "training/contract.py",
+      "archive_entry": "code/qwen35-pickup-v2-lora-20261029/scripts/contract.py",
+      "original_sha256": "8f61b8866c56d603c7c53e1e21b1f62bcadeddca1c93258f07970a625483fbc1",
+      "published_sha256": "cc218b3d89188d1b9662f78cd76fa29bfb46bd8a0e5793d840fec697dda56fc8",
+      "modified_for_publication": false
+    },
+    {
+      "file": "training/qwen_sft_sample.py",
+      "archive_entry": "code/qwen35-pickup-v2-lora-20261029/scripts/qwen_sft_sample.py",
+      "original_sha256": "e4c5372c65c61c7e6fb9446ab944038a520883068e580c8242c5bb56027211df",
+      "published_sha256": "a46b35717b0095b85b5a27a1164f5ed7bd0e6be50dd6dff96bbac41071476e5d",
+      "modified_for_publication": true
+    },
+    {
+      "file": "training/train_lora.py",
+      "archive_entry": "code/qwen35-pickup-v2-lora-20261029/scripts/train_lora.py",
+      "original_sha256": "04eb63e36d4b7f934ddfcd2565a92c28338c05b37ca13a50848c2c886bdb3942",
+      "published_sha256": "824da4d334e3bf5f8093326b0bfa7c25313bd1cd736570e1263ea6e7ba1bb436",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/analyze_call_chains.py",
+      "archive_entry": "code/captain-reproduction/scripts/analyze_call_chains.py",
+      "original_sha256": "e7258d788427f50545276162b0d3ad7cc7e3a6d0d3dc3a74d0d9a0cbd934940c",
+      "published_sha256": "7a4fee11b3017c8d4a4354895ce30f30bba41e3cf30f90349e4827205d4be2c2",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/analyze_trajectories.py",
+      "archive_entry": "code/captain-reproduction/scripts/analyze_trajectories.py",
+      "original_sha256": "5a495e0b518fa06b9e1c7665e8de855fa36a7b99ce37a4de5e3c6367c55ffcf1",
+      "published_sha256": "1cd25017e9690dd55411619b427f7af4e9cb06514c3427da5c0f7c40ccbe1d8a",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/export_analysis_tables.py",
+      "archive_entry": "code/captain-reproduction/scripts/export_analysis_tables.py",
+      "original_sha256": "34fb98eda6cd0ba9d6b7fd326fdda2cd531761be5fa4220adc32f96a57a5c294",
+      "published_sha256": "c3b881626301c1eb408e5fbe7024ca9ee23beba21b296280a864d1cabd5b2bfe",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/diagnostic_trace.py",
+      "archive_entry": "code/captain-reproduction/scripts/diagnostic_trace.py",
+      "original_sha256": "f4f03e83d26fa679fcdb124c24c26ffcb614cacf7a43796f49014abed68766f3",
+      "published_sha256": "12007007850c7fcbf492e7f17226fe7662bc7850962eb75bc13d7f9d6e2a47f6",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/audit_libero400.py",
+      "archive_entry": "code/captain-reproduction/scripts/audit_libero400.py",
+      "original_sha256": "ee392691dbab708796aa9de1ffcca921a831293dc687631b4e6ca52ce5e7f3c2",
+      "published_sha256": "48cbb50549c16179ceb7964353a2191e580185df995a1fa50cfc63aac07f8851",
+      "modified_for_publication": false
+    },
+    {
+      "file": "diagnostics/export_simplerenv_tables.py",
+      "archive_entry": "code/captain-reproduction/scripts/export_simplerenv_tables.py",
+      "original_sha256": "1247d752ccc6ef1163459fe4dcf71c4e71e5e7ac6a78ae8ba92770f5d5b23bba",
+      "published_sha256": "661f1091e86dacbce5cfa43bd0b1d36e5492c0160f22ebc0c344533bb174512d",
+      "modified_for_publication": false
+    }
+  ]
+}
